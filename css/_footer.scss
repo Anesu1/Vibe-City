@@ -1,0 +1,17 @@
+footer{
+   .container{
+    display: flex;justify-content: space-between;align-items: center;padding:2% 0;
+    @media(max-width:767px){
+        flex-direction:column;text-align:center;padding:5% 0;
+    }
+    p{
+        margin:auto 0;
+    }
+    img{height:40px;
+        @media(max-width:767px){
+            height:30px;margin-top:20px;
+        }
+    }
+   }
+}
+

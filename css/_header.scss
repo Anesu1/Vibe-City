@@ -1,0 +1,75 @@
+header{
+    position:absolute;width:100%;background:transparent;width:90%;left:50%;transform:translateX(-50%);z-index:99;top:10px;transition:500ms;
+    @media(min-width:767px){
+        display: flex;justify-content:space-between;top:0;
+    }
+    img{
+        width:100px;transition:500ms;
+        @media(min-width:767px){
+            width:150px;
+        }
+        @media(min-width:1000px){
+            width:200px;
+        }
+    }
+    .menu{
+        @media(min-width:767px){
+            margin:auto 0;
+        }
+        input{
+            display: none;
+        }
+        label{
+            padding:20px 50px 20px 5px;position: absolute;right:0px;top:15px;
+            @media(min-width:767px){
+                display: none;
+            }
+            span{
+                width:35px;height:3px;background:rgb(255, 255, 255);position: absolute;
+                &:before{
+                    width:100%;height: 100%;position: absolute;content:"";top:-13px;background:rgb(255, 255, 255);
+                }
+                &:after{
+                    width:100%;height: 100%;position: absolute;content:"";top:13px;background:rgb(255, 255, 255);
+                }
+            }
+        }
+        ul{
+            background:white;max-height:0;overflow: hidden;transition:max-height 700ms ease-in-out;
+            @media(min-width:767px){
+                max-height:none;background:transparent;
+            }
+            .active{
+               a{
+                background:$red;color:white;
+                @media(min-width:767px){
+                    background:transparent;border-bottom:1px solid $red;color:rgb(255, 255, 255);
+                }
+               }
+            }
+            li{
+                @media(min-width:767px){
+                    float:left;padding:28px 5px;
+                }
+                @media(min-width:1000px){
+                    padding:28px 20px;
+                }
+                
+                a{
+                    display: block;padding:28px 20px;text-decoration: none;color: black;
+                    @media(min-width:767px){
+                        color:white;padding:5px;
+                    }
+                }
+            }
+        }
+        input:checked ~ ul{
+            max-height:500px;
+        }
+    }
+}
+
+.bgColor{
+    position:fixed;background:rgba(0, 0, 0, 0.329);width:100%;
+    img{width:120px;padding:0 0 0 1%;}
+}

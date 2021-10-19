@@ -1,0 +1,29 @@
+@font-face{
+    font-family:"avenir";
+    font-style:normal;
+    src: url("./AvenirNext-UltraLight.ttf");
+}
+
+
+@mixin flex {
+    display:flex; align-items: center; justify-content: center;
+}
+
+@mixin background {
+    background-size: cover;background-position: center center;
+}
+
+@import "./variables";
+@import "./reset";
+@import "./header";
+@import "./banner";
+@import "./services";
+@import "./about";
+@import "./wemake";
+@import "./how";
+@import "./clients";
+@import "./contact";
+@import "./info";
+@import "./touch";
+@import "./footer";
+

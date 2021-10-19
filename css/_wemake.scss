@@ -1,0 +1,47 @@
+.wemake{
+    padding:5% 0;@extend .services;
+    .row{
+        &:first-child{
+            margin-bottom:80px;
+            @media(max-width:1000px){
+                margin-bottom:30px;
+            }
+            h2{
+        font-size:45px;
+        @media(max-width:1000px){
+            margin-bottom:30px;
+        }
+        @media(max-width:767px){
+            font-size:32px;
+        }
+        }
+    }
+    &:last-child{
+       
+       .item1,
+       .item2,
+       .item3,.item4,.item5,.item6{
+           box-shadow:unset;height:100%;width:100%;
+           
+        }
+        .item1{
+            background:linear-gradient(to bottom,rgba(0, 0, 0, 0.33)),url("../img/wemake-1.jpeg");@include background();
+        }  
+        .item2{
+            background:url("../img/wemake-2.jpeg");@include background();
+        }
+        .item3{
+            background:url("../img/wemake-3.jpeg");@include background();
+        }
+        .item4{
+            background:url("../img/wemake-4.jpeg");@include background();
+        }
+        .item5{
+            background:url("../img/wemake-5.jpeg");@include background();
+        }
+        .item6{
+            background:url("../img/wemake-6.jpeg");@include background();
+        }
+    }
+  }
+}

@@ -1,0 +1,18 @@
+.clients{
+    text-align:center;padding:5% 0;
+    h2{
+        font-size:70px;font-weight:bolder;margin-bottom:30px;
+        @media(max-width:767px){
+            font-size:40px;
+        }
+        span{
+            color:$red;
+        }
+    }
+    p{
+        line-height:30px;font-size:18px;padding:0 15%;
+        @media(max-width:767px){
+            padding:0;
+        }
+    }
+}

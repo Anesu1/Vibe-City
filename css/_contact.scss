@@ -1,0 +1,29 @@
+.contact{
+    background: linear-gradient(to bottom,rgba(0, 0, 0, 0.548)),url("../img/people-doing-group-hand-cheer-3280130.jpg");@include background();background-attachment: fixed;padding:10% 0;text-align:center;
+    @media(max-width:768px){
+        background-size:100%;
+    }
+    h2{
+       color:white;font-size:70px;line-height:100px; font-weight:bolder;
+       @media(max-width: 767px){
+           font-size:40px;line-height:50px;
+       }
+    }
+    p{
+        color: white;padding: 10px 0 30px 0;font-size:18px;opacity: 0.7;
+        @media(max-width: 767px){
+            font-size:20px;
+        }
+    }
+    a{
+        button{
+            width: 200px;padding: 2% 0;font-size: 20px;border-radius: 40px;color:white;background:$red;border:none;
+            @media(max-width:767px){
+                width: 160px;padding: 3% 0;font-size:15px;
+            }
+            @media(max-width:400px){
+                padding: 5% 0;
+            }
+        }
+    }
+}
